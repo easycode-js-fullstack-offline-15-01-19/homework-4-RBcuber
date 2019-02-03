@@ -25,7 +25,7 @@ function reverseString(str) {
 	console.log(newStr)
 }
 
-reverseString('qwerty');
+reverseString('hello');
 
 //3
 
@@ -88,7 +88,7 @@ function doubleArray3(arr) {
 	 console.log(arr);
   }
 
-  changeCollection([1, 2, 3], ['a', 'b', 'c'], [1, 4, 'dfsfas', 124]);
+  changeCollection([1, 2, 3], ['a', 'b', 'c'], [1, 4, 'dfsfas', 124], [1, 4, 12, 124]);
 
 //8
 let users = [
@@ -98,20 +98,25 @@ let users = [
         gender: 'male'
     },
     {
-        name  : 'Petr',
-        age   : 29,
+        name  : 'Vetal',
+        age   : 21,
         gender: 'male'
     },
     {
-        name  : 'Adelina',
-        age   : 30,
-        gender: 'female'
+        name: 'Denis',
+        age: '29',
+        gender: 'male'
     },
     {
-        name  : 'Patricia',
-        age   : 25,
+        name: 'Ihor',
+        age: '20',
+        gender: 'male'
+    },
+    {
+        name: 'Katerina',
+        age: '3125',
         gender: 'female'
-    }
+    },
  ];
 
  function funcGetUsers (arr, field, argument) {
@@ -127,7 +132,7 @@ let users = [
 
     return console.log(usersResult);
 }
-funcGetUsers(users, 'gender', 'female')
+funcGetUsers(users, 'gender', 'male')
 
 
 
