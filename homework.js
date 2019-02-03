@@ -22,7 +22,7 @@ function reverseString(str) {
 	for(let i = str.length - 1; i >= 0; i--) {
 		newStr += str[i];
 	}
-	console.log(newStr)
+	return console.log(newStr);
 }
 
 reverseString('hello');
@@ -39,22 +39,22 @@ function getCodeSytingFromText(str) {
 	return console.log(newStr);
 
 }
-getCodeSytingFromText('hello')
+getCodeSytingFromText('hello');
 
 //4
 
-function game(number) {
+function Randomgame(number) {
 	if (number.length === 0 || typeof number !== 'number') {return console.log('Ошибка, Введите число');}
 		let numberRand;
 		numberRand = Math.ceil(Math.random() * 10);
 		if(numberRand === number){
-			return console.log('Вы выиграли')
+			return console.log('Вы выиграли');
 		} else {
-			return console.log(`Вы не угадали ваше число ${number} а выпало число ${numberRand}`)
+			return console.log(`Вы не угадали ваше число ${number} а выпало число ${numberRand}`);
 		}
 }
 
-game(2);
+Randomgame(2);
 
 //5 
 
@@ -74,9 +74,9 @@ function getArray (n) {
 
 function doubleArray3(arr) {
 	arr = arr.concat(arr);
-	return console.log(arr)
+	return console.log(arr);
  }
- doubleArray3([1, 2, 3])
+ doubleArray3([1, 2, 3]);
 
 //7
   function changeCollection() {
@@ -116,7 +116,7 @@ let users = [
         name: 'Katerina',
         age: '3125',
         gender: 'female'
-    },
+    }
  ];
 
  function funcGetUsers (arr, field, argument) {
@@ -132,7 +132,7 @@ let users = [
 
     return console.log(usersResult);
 }
-funcGetUsers(users, 'gender', 'male')
+funcGetUsers(users, 'gender', 'male');
 
 
 
@@ -161,14 +161,15 @@ function getStringOfArray(arrObj) {
 	for (let value of arrObj) {
 		newArr.push(`${value.name} is ${value.age}`);
 	}
-	return newArr.join(', ');	}
+    return newArr.join(', ');	
+}
 
 function getReverseArray(arrStr) {
 	let newArr = [];
 	for (let i = 0; i < arrStr.length; i++) {
-	newArr.push(arrStr[i].split('').reverse().join(''))
+	newArr.push(arrStr[i].split('').reverse().join(''));
 	}
-	return newArr.join(', ')
+	return newArr.join(', ');
 }	
 
 function processData (arr, func) {
